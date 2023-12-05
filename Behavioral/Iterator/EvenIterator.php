@@ -25,7 +25,7 @@ class EvenIterator implements Iterator
         return $this->citiesCollection->getEgyptCities()[$this->index];
     }
 
-    public function next()
+    public function next(): void
     {
         $this->index = $this->nextEven();
     }
@@ -35,12 +35,12 @@ class EvenIterator implements Iterator
         return $this->index;
     }
 
-    public function valid()
+    public function valid(): bool
     {
         return isset($this->citiesCollection->getEgyptCities()[$this->index]);
     }
 
-    public function rewind()
+    public function rewind(): void
     {
         $this->index = 0;
     }
@@ -52,7 +52,6 @@ class EvenIterator implements Iterator
             if(++$this->index % 2 === 0)
             {
                 return $this->index;
-                break;
             }
             return  ++$this->index;
         }

@@ -37,7 +37,7 @@ class EgyptCitiesCollection implements IteratorAggregate
         return $this->egyptCities;
     }
 
-    public function getIterator()
+    public function getIterator(): Traversable
     {
        return new OddIterator($this);
     }

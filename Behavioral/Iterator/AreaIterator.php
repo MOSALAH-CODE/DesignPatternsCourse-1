@@ -25,7 +25,7 @@ class AreaIterator implements \Iterator
         return $this->sortedCitries[$this->index];
     }
 
-    public function next()
+    public function next(): void
     {
         $this->index +=1;
     }
@@ -35,12 +35,12 @@ class AreaIterator implements \Iterator
        return $this->index;
     }
 
-    public function valid()
+    public function valid(): bool
     {
        return isset($this->citiesCollection->getEgyptCities()[$this->index]);
     }
 
-    public function rewind()
+    public function rewind(): void
     {
         $this->index = 0;
     }

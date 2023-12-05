@@ -25,7 +25,7 @@ class OddIterator implements Iterator
         return $this->citiesCollection->getEgyptCities()[$this->index];
     }
 
-    public function next()
+    public function next(): void
     {
         $this->index = $this->nextOdd();
     }
@@ -35,12 +35,12 @@ class OddIterator implements Iterator
         return $this->index;
     }
 
-    public function valid()
+    public function valid(): bool
     {
         return isset($this->citiesCollection->getEgyptCities()[$this->index]);
     }
 
-    public function rewind()
+    public function rewind(): void
     {
         $this->index = 1;
     }
@@ -52,7 +52,6 @@ class OddIterator implements Iterator
             if(++$this->index % 2 === 1)
             {
                 return $this->index;
-                break;
             }
             return  ++$this->index;
         }
