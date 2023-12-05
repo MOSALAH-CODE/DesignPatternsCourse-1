@@ -19,17 +19,17 @@ class Restaurant implements SplSubject
         $this->observers = new SplObjectStorage();
     }
 
-    public function attach(SplObserver $observer)
+    public function attach(SplObserver $observer): void
     {
         $this->observers->attach($observer);
     }
 
-    public function detach(SplObserver $observer)
+    public function detach(SplObserver $observer): void
     {
         $this->observers->detach($observer);
     }
 
-    public function notify()
+    public function notify(): void
     {
         /* @var SplObserver $observer
          */
