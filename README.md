@@ -3,7 +3,7 @@ GitHub build Status
 ![](https://github.com/MOSALAH-CODE/DesignPatternsCourse-1//workflows/build/badge.svg)
 
 Travis Build Status
-![](https://app.travis-ci.com/RamyHakam/DesignPatternsCourse.svg?branch=master)
+![](https://app.travis-ci.com/MOSALAH-CODE/DesignPatternsCourse-1.svg?branch=master)
 
 
 Complete code examples for  all the design patterns in php course By Ramy Hakam
