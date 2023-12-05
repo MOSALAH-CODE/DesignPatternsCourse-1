@@ -1,6 +1,6 @@
 # Design Patterns in PHP course
 GitHub build Status
-![](https://github.com/RamyHakam/DesignPatternsCourse//workflows/build/badge.svg)
+![](https://github.com/MOSALAH-CODE/DesignPatternsCourse-1//workflows/build/badge.svg)
 
 Travis Build Status
 ![](https://app.travis-ci.com/RamyHakam/DesignPatternsCourse.svg?branch=master)
